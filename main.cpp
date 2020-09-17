@@ -78,9 +78,6 @@ float jaccard(vector<string> a,vector<string> b){
 }
 void writeout(char const *argv,double result){//文件写入 
 	ofstream outfile;
-	if (!outfile.is_open()){
-		cout << "open outfile failure!" << endl;
-	} 
 	
 	outfile.open(argv);	
 	outfile<<fixed<<setprecision(2)<<result<<endl;
